@@ -498,7 +498,7 @@ void DelayedStart()
 	// Update fullscreen videos
 	if (FullscreenVideos)
 	{
-		PatchFullscreenVideos();
+		//PatchFullscreenVideos();
 	}
 
 	// Patch resolution list in the Options menu
@@ -541,6 +541,8 @@ void DelayedStart()
 	{
 		PatchCriware();
 	}
+
+	PatchBink();
 
 	// Remove the "Now loading..." message
 	switch (GameVersion)

@@ -356,6 +356,18 @@
     <ClCompile Include="Wrappers\d3d8\Overlay.cpp">
       <Filter>Wrappers\d3d8</Filter>
     </ClCompile>
+    <ClCompile Include="Patches\PatchBink.cpp">
+      <Filter>Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\bink\ffmpeg.cpp">
+      <Filter>Include\bink</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\bink\bink.cpp">
+      <Filter>Include\bink</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\bink\bink_int.cpp">
+      <Filter>Include\bink</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Settings.h">
@@ -568,6 +580,15 @@
     <ClInclude Include="Wrappers\d3d8\Overlay.h">
       <Filter>Wrappers\d3d8</Filter>
     </ClInclude>
+    <ClInclude Include="Include\bink\bink_int.h">
+      <Filter>Include\bink</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\bink\ffmpeg.h">
+      <Filter>Include\bink</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\bink\bink.h">
+      <Filter>Include\bink</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources\sh2-enhce.rc">
@@ -660,6 +681,9 @@
     </Filter>
     <Filter Include="External\MemoryModule">
       <UniqueIdentifier>{3ce3eff9-8225-4947-963d-ff492c58ebba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\bink">
+      <UniqueIdentifier>{65652d42-11c3-4fd1-808a-ed532d3984d3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

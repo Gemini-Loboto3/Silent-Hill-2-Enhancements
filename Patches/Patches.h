@@ -109,6 +109,7 @@ void PatchAdvancedOptions();
 void PatchAlternateStomp();
 void PatchBestGraphics();
 void PatchBinary();
+void PatchBink();
 void PatchCDCheck();
 void PatchCatacombsMeatRoom();
 void PatchClosetSpawn();

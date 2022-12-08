@@ -25,6 +25,9 @@
 #include "Logging\Logging.h"
 #include "Unicode.h"
 
+#define BARE_BINK
+#include "bink\bink.h"
+
 // API typedef
 typedef int(WINAPI* PFN_BinkOpen)(char* name, DWORD flags);
 typedef FILE(WINAPIV *PFN_fopen)(char const* lpFileName, char const* lpMode);
@@ -339,7 +342,8 @@ wchar_t* GetFileModPath(const wchar_t* sh2, const wchar_t* str)
 
 int WINAPI BinkOpenHandler(char* lpFileName, DWORD dwFlags)
 {
-	static PFN_BinkOpen org_BinkOpen = (PFN_BinkOpen)InterlockedCompareExchangePointer((PVOID*)&p_BinkOpen, nullptr, nullptr);
+	//static PFN_BinkOpen org_BinkOpen = (PFN_BinkOpen)InterlockedCompareExchangePointer((PVOID*)&p_BinkOpen, nullptr, nullptr);
+	static PFN_BinkOpen org_BinkOpen = (PFN_BinkOpen)BinkOpen;
 
 	if (!org_BinkOpen)
 	{
